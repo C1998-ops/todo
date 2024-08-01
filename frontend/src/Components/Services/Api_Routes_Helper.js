@@ -1,0 +1,9 @@
+export const host = "http://localhost:80";
+export const API_AUTH_URL = `${host}/api/auth/`;
+export const API_ADMIN_URL = `${host}/api/admin/`;
+export const API_AUTH_SIGNUP = `${host}/api/auth/signup`;
+export const SIGNIN_EMLPWD = `${host}/api/signin`;
+export const POST_TASK = `${host}/api/add/task`;
+export const FETCH_TASKS = `${host}/api/fetch/tasks`;
+export const EDIT_TASK = `${host}/api/edit/todo`;
+export const CHANGE_STATUS = `${host}/api/update`;
