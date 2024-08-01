@@ -108,7 +108,7 @@ const SignUp = () => {
               "userNew",
               JSON.stringify({ res, role: "USER" })
             );
-            window.location.assign("/home");
+            window.location.assign("/");
           }
         })
         .catch((err) => console.error(err));

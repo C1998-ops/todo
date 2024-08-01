@@ -59,7 +59,7 @@ const SignIn = () => {
         localStorage.setItem("email", email);
         setSuccessMsg("SignIn successfully!");
         setshowErr(true);
-        window.location.assign("/home");
+        window.location.assign("/");
         // navigate("/", { preventScrollReset: true });
       }
     } catch (error) {

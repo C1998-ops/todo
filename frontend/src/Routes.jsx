@@ -13,7 +13,7 @@ const MainRoutes = () => {
         <Route path={"/signin"} element={<SignIn />} />
         <Route path={"/signup"} element={<SignUp />} />
       </Route>
-      <Route path="/home" element={<ProtectedRoutes />}>
+      <Route path="/" element={<ProtectedRoutes />}>
         <Route element={<InnerContent />}>
           <Route index element={<Homepage />} />
         </Route>
