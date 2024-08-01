@@ -1,5 +1,5 @@
 import { Alert, Box, Modal, Snackbar, Typography } from "@mui/material";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
   FETCH_TASKS,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate, Link, Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 const useAuth = () => {
   const user = localStorage.getItem("UserNew");
   if (user) {
