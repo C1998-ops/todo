@@ -16,12 +16,10 @@ router.get("/", (req, response) => {
   // Getting the set Headers
   const headers = response.getHeaders();
 
-  // Printing those headers
-  console.log(headers);
-
   // browser in response
-  response.end("ok");
+  response.end("Api is running !");
 });
+
 router.post("/api/signin", controllers.signInUser);
 router.post("/api/signup", controllers.SignupEmailO);
 router.post("/api/add/task", controllers.addTask);
