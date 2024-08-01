@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Alert, Snackbar, Button, Typography } from "@mui/material";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import axios from "axios";

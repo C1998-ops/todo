@@ -5,7 +5,6 @@ function ProtectedRoutes() {
   function useAuth() {
     try {
       let user = localStorage.getItem("userNew");
-      console.log("user", user);
       if (user && user !== null) {
         return {
           auth: true,

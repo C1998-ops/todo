@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import { HeaderBar } from "../Components/DesignTools/HeaderBar";
 const AuthContent = () => {
