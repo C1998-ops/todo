@@ -281,7 +281,6 @@ exports.updatetask = expressAsyncHandler(async (req, res) => {
       },
       { new: false, upsert: true }
     );
-    console.log(updatedTask);
     if (!updatedTask) {
       return res.status(404).json({ message: "Task not found" });
     }

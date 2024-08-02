@@ -26,3 +26,6 @@ npm install
 
 npm start
 
+##  To connect with backend database . please add your mongodb uri in .env file
+# ex: URI = mongodb+srv://*********:******@cluster0.kdubwau.mongodb.net
+# replace these with your mongodb credentials.

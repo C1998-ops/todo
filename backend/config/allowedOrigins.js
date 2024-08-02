@@ -1,5 +1,5 @@
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://todoappmgr.netlify.app",
+  "https://main--todoappmgr.netlify.app",
 ];
 module.exports = allowedOrigins;

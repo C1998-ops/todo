@@ -62,17 +62,22 @@ const TodoContainer = ({ todos, editTodo, removeItem }) => {
         [source.droppableId]: items,
       }));
     } else {
+      try {
+        await handleStatusChange(draggableId, true);
+      } catch (error) {
+        console.error("Error moving task", error);
+      } finally {
+        const result = move(
+          todoItems[source.droppableId],
+          todoItems[destination.droppableId],
+          source,
+          destination
+        );
+        setTodoItems({
+          ...result,
+        });
+      }
       // Moving to a different list
-      await handleStatusChange(draggableId, true);
-      const result = move(
-        todoItems[source.droppableId],
-        todoItems[destination.droppableId],
-        source,
-        destination
-      );
-      setTodoItems({
-        ...result,
-      });
     }
   };
 

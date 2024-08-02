@@ -6,7 +6,7 @@ import { HeaderBar } from "../Components/DesignTools/HeaderBar";
 const InnerContent = () => {
   return (
     <div className="inner-content">
-      <HeaderBar />
+      <HeaderBar title={{ pageTitle: "Todo Manager" }} />
       <main className="main_content">
         <Outlet />
       </main>
